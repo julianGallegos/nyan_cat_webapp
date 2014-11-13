@@ -7,18 +7,21 @@ $(document).ready(function() {
 
 var addNewEntry = function(event){
   event.preventDefault();
-  console.log("i'm in the function")
-  console.log(this.email)
-  console.log(this.content)
   var ajaxRequest = $.ajax({
     url: '/feedback/new',
     type: 'post',
     data: {email: this.email.value, content: this.content.value}
-  })
-}
+  });
+  ajaxRequest.done(function(server_data){
+
+    $("#new_entry").append(server_data.content + '<br>')
+
+  }
+)};
+
+  $("#feedback_form").on("click", addNewEntry);
 
 
-  $("#feedback_form").on("click", addNewEntry)
 
 });
 

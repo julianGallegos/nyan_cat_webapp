@@ -4,7 +4,7 @@
 
     <div class="col-md-5 col-md-offset-4 test1">
 
-      <form id="feedback_form" class="form-horizontal" role="form" action="/feedback/new" method="POST">
+      <form id="feedback_form" class="form-horizontal">
         <div class="form-group">
           <input type="username" class="form-control" name="email" placeholder="Please leave your email">
           <input type="text" class="" name="content" placeholder="What else would you like this chrome extension to do?">
@@ -16,11 +16,8 @@
 
   </div>
 
-  <div class="row">
+  <div id="new_entry" class="row">
     <div class="col-md-1 col-md-offset-4 test1">
-      <%@allFeedback.each do |feedback| %>
-        <%=feedback.content %><br><br>
-      <%end%>
 
 
 

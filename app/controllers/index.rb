@@ -9,9 +9,8 @@ get '/feedback' do
 end
 
 post '/feedback/new' do
-  # "hello!!!!"
-  @feedback = Feedback.create(email: params[:email], content: params[:content])
   content_type :json
+  @feedback = Feedback.create(email: params[:email], content: params[:content])
   @feedback.to_json
 end
 
