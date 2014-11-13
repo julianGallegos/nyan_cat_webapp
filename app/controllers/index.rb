@@ -1,5 +1,9 @@
 get '/' do
 
-  erb :index
+  erb :sign_in
 end
 
+get '/user/new' do
+
+
+end
