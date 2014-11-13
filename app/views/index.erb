@@ -1,18 +1,30 @@
 <H1 class='index_message'>I can haz feedback<H1>
 
-   <div class="row">
+  <div class="row">
 
     <div class="col-md-5 col-md-offset-4 test1">
 
-<form class="form-horizontal" role="form">
-  <div class="form-group">
-      <input type="username" class="form-control" for="Name" placeholder="Please leave your name">
-      <input type="password" class="form-control" name="password" placeholder="What else would you like this chrome extension to do?">
-      <a href="/sign_in"><button id='button1' type="button" class="btn btn-success">Submit Feeback</button></a>
+      <form id="feedback_form" class="form-horizontal" role="form" action="/feedback/new" method="POST">
+        <div class="form-group">
+          <input type="username" class="form-control" name="email" placeholder="Please leave your email">
+          <input type="text" class="" name="content" placeholder="What else would you like this chrome extension to do?">
+          <input type="submit" id='button1' type="button" class="btn btn-success" value="Submit Feeback">
+        </div>
+      </form>
+
+    </div>
+
   </div>
 
- </form>
+  <div class="row">
+    <div class="col-md-1 col-md-offset-4 test1">
+      <%@allFeedback.each do |feedback| %>
+        <%=feedback.content %><br><br>
+      <%end%>
+
+
+
+    </div>
 
   </div>
 
-</div>
