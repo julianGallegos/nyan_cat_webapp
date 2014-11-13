@@ -1,0 +1,39 @@
+.welcome{
+  padding-top: 15px ;
+  font-size: 35px;
+  margin-bottom: 75px;
+  color: lightyellow;
+  text-align: center;
+}
+
+.welcome_text{
+  padding-top: 15px ;
+  font-size: 40px;
+  margin-bottom: 150px;
+  color: white;
+  text-align: center;
+}
+
+.created_by{
+  text-align: center;
+}
+
+
+
+body{
+  background-image: url(http://www.desktopaper.com/wp-content/uploads/spectacular-nyan-cat-rainbow-stars-pinkie-pie-anime.jpg);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+body {
+  background-color: transparent;
+}
+
+.language{
+  color: green;
+  font-size: 15px
+}
