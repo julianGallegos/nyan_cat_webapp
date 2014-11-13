@@ -34,3 +34,11 @@ body{
   color: green;
   font-size: 15px
 }
+
+.index_message{
+  padding-top: 10px;
+  color: yellow;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 45px;
+}
