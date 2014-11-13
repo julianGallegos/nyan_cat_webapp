@@ -1,0 +1,44 @@
+.welcome{
+  padding-top: 15px ;
+  font-size: 35px;
+  margin-bottom: 75px;
+  color: lightyellow;
+  text-align: center;
+}
+
+.welcome_text{
+  padding-top: 15px ;
+  font-size: 40px;
+  margin-bottom: 150px;
+  color: white;
+  text-align: center;
+}
+
+.created_by{
+  text-align: center;
+  color: white;
+}
+
+
+
+body{
+  background-image: url(http://fc04.deviantart.net/fs70/f/2012/164/d/5/nyan_cat_and_pinkie_pie_wallpaper_by_nestordc-d53bfos.png);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.language{
+  color: green;
+  font-size: 15px
+}
+
+.index_message{
+  padding-top: 10px;
+  color: yellow;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 45px;
+}
