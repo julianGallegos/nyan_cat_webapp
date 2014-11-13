@@ -6,6 +6,8 @@
   text-align: center;
 }
 
+
+
 .welcome_text{
   padding-top: 15px ;
   font-size: 40px;
@@ -42,3 +44,9 @@ body{
   text-align: center;
   margin-top: 45px;
 }
+
+#new_entry{
+  color: white;
+}
+
+
