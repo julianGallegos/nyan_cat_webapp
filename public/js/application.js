@@ -14,7 +14,7 @@ var addNewEntry = function(event){
   });
   ajaxRequest.done(function(server_data){
 
-    $("#new_entry").append(server_data.content + '<br>')
+    $("#new_entry").append(server_data.content + '<br><br>')
 
   }
 )};
